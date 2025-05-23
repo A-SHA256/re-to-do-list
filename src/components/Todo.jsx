@@ -29,7 +29,7 @@ const Todo = ({todo, deleteTodo, editTodo}) => {
   }
 
   return (
-      <div className="todo" onClick={(e) => isCompleted(e)}>
+      <div className="todo">
           {editing ? (
               <>
                 <input
@@ -41,7 +41,7 @@ const Todo = ({todo, deleteTodo, editTodo}) => {
               </>
             ) : (
                 <>
-                <div>{todo.text}</div>
+                <div onClick={(e) => isCompleted(e)}>{todo.text}</div>
                 <div className="btns">
                   <button type="button" onClick={isEditing}>Edit</button>
                   <button type="button" onClick={() => deleteTodo(todo.id)}>Delete</button>
