@@ -1,0 +1,35 @@
+.todo-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #0d0d0d;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    box-shadow:
+      0 0 10px #39ff14,
+      0 0 20px #ff00ff,
+      0 0 30px #00ffff;
+    color: #e0e0e0;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .todo-container:hover {
+    box-shadow:
+      0 0 20px #39ff14,
+      0 0 40px #ff00ff,
+      0 0 60px #00ffff;
+  }
+  
+  .todo-list {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .todo-list p {
+    color: #ff00ff;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0 0 5px #ff00ff;
+  }
+  
